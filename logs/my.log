@@ -1,0 +1,17 @@
+2021-08-30 17:30:28.144  INFO 6016 --- [main] com.jas.SpringBootDemoApplication        : Starting SpringBootDemoApplication using Java 16.0.1 on DESKTOP-MQML76V with PID 6016 (C:\Users\Jas\IdeaProjects\spring-boot-demo\target\classes started by Jas in C:\Users\Jas\IdeaProjects\spring-boot-demo)
+2021-08-30 17:30:28.145 DEBUG 6016 --- [main] com.jas.SpringBootDemoApplication        : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-08-30 17:30:28.145  INFO 6016 --- [main] com.jas.SpringBootDemoApplication        : No active profile set, falling back to default profiles: default
+2021-08-30 17:30:28.782  WARN 6016 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-30 17:30:28.842  INFO 6016 --- [main] com.jas.SpringBootDemoApplication        : Started SpringBootDemoApplication in 0.928 seconds (JVM running for 1.255)
+2021-08-30 17:31:13.633  INFO 10236 --- [main] com.jas.SpringBootDemoApplication        : Starting SpringBootDemoApplication using Java 16.0.1 on DESKTOP-MQML76V with PID 10236 (C:\Users\Jas\IdeaProjects\spring-boot-demo\target\classes started by Jas in C:\Users\Jas\IdeaProjects\spring-boot-demo)
+2021-08-30 17:31:13.635 DEBUG 10236 --- [main] com.jas.SpringBootDemoApplication        : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-08-30 17:31:13.635  INFO 10236 --- [main] com.jas.SpringBootDemoApplication        : No active profile set, falling back to default profiles: default
+2021-08-30 17:31:14.274  WARN 10236 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-30 17:31:14.331  INFO 10236 --- [main] com.jas.SpringBootDemoApplication        : Started SpringBootDemoApplication in 0.93 seconds (JVM running for 1.261)
+2021-08-30 17:41:49.981  INFO 21484 --- [main] com.jas.SpringBootDemoApplication        : Starting SpringBootDemoApplication using Java 16.0.1 on DESKTOP-MQML76V with PID 21484 (C:\Users\Jas\IdeaProjects\spring-boot-demo\target\classes started by Jas in C:\Users\Jas\IdeaProjects\spring-boot-demo)
+2021-08-30 17:41:49.982  INFO 21484 --- [main] com.jas.SpringBootDemoApplication        : The following profiles are active: pro
+2021-08-30 17:41:50.623  WARN 21484 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-30 17:41:50.681  INFO 21484 --- [main] com.jas.SpringBootDemoApplication        : Started SpringBootDemoApplication in 0.94 seconds (JVM running for 1.279)
+2021-08-30 17:44:30.168  INFO 21872 --- [main] com.jas.SpringBootDemoApplication        : Starting SpringBootDemoApplication using Java 16.0.1 on DESKTOP-MQML76V with PID 21872 (C:\Users\Jas\IdeaProjects\spring-boot-demo\target\classes started by Jas in C:\Users\Jas\IdeaProjects\spring-boot-demo)
+2021-08-30 17:44:30.169  INFO 21872 --- [main] com.jas.SpringBootDemoApplication        : The following profiles are active: pro
+2021-08-30 17:44:30.856  INFO 21872 --- [main] com.jas.SpringBootDemoApplication        : Started SpringBootDemoApplication in 0.918 seconds (JVM running for 1.274)

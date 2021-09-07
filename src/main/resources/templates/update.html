@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>新增</title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" style="max-width: 700px;">
+        <h2 class="page-header">新增帳號</h2>
+        <div class="well">
+            <form action="#" th:action="@{/account/input}" th:Object="${account}" method="post">
+                <input type="hidden" th:value="*{id}" name="id">
+                <div class="form-group">
+                    <label for="nameId">名稱</label>
+                    <input type="text" name="name" id="nameId" class="form-control" th:field="*{name}">
+                </div>
+                <div class="form-group">
+                    <label for="userId">使用者</label>
+                    <input type="text" name="user" id="userId" class="form-control" th:field="*{user}">
+                </div>
+                <div class="form-group">
+                    <label for="statusId">狀態</label>
+                    <select name="status" id="statusId" class="form-control">
+                        <option value="掛錢中" th:selected="(*{status} == '掛錢中')">掛錢中</option>
+                        <option value="練等中" th:selected="(*{status} == '練等中')">練等中</option>
+                        <option value="已死亡" th:selected="(*{status} == '已死亡')">已死亡</option>
+                        <option value="已退役" th:selected="(*{status} == '已退役')">已退役</option>
+                        <option value="未創角色" th:selected="(*{status} == '未創角色')">未創角色</option>
+                        <option value="未創帳號" th:selected="(*{status} == '未創帳號')">未創帳號</option>
+                        <option value="等買寵物中" th:selected="(*{status} == '等買寵物中')">等買寵物中</option>
+                        <option value="可掛(未使用)" th:selected="(*{status} == '可掛(未使用)')">可掛(未使用)</option>
+                        <option value="創好已領物品" th:selected="(*{status} == '創好已領物品')">創好已領物品</option>
+                        <option value="創好未領物品" th:selected="(*{status} == '創好未領物品')">創好未領物品</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="jobId">職業</label>
+                    <input type="text" name="job" id="jobId" class="form-control" th:field="*{job}">
+                </div>
+                <div class="form-group">
+                    <label for="levelId">等級</label>
+                    <input type="text" name="level" id="levelId" class="form-control" th:field="*{level}">
+                </div>
+                <div class="form-group">
+                    <label for="beanAccountId">樂豆帳號</label>
+                    <input type="text" name="beanAccount" id="beanAccountId" class="form-control" th:field="*{beanAccount}">
+                </div>
+                <div class="form-group">
+                    <label for="beanPasswordId">樂豆密碼</label>
+                    <input type="text" name="beanPassword" id="beanPasswordId" class="form-control" th:field="*{beanPassword}">
+                </div>
+                <p class="text-center">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script th:src="@{/js/bootstrap.min.js}" src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

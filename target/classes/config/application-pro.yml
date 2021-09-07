@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: warn
+    com.jas: info
+  file:
+    name: logs/my.log
+
+

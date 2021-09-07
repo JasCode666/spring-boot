@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>帳號詳情</title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body th:Object="${account}">
+
+    <div class="container" style="max-width: 700px;">
+
+        <h2 class="page-header" style="margin-top: 50px;">詳情</h2>
+        <div class="well">
+            <p>
+                <strong>名稱: </strong><span th:text="*{name}" >random</span>
+            </p>
+            <p>
+                <strong>使用者: </strong><span th:text="*{user}">Jas</span>
+            </p>
+            <p>
+                <strong>狀態: </strong><span th:text="*{status}">已死亡</span>
+            </p>
+            <p>
+                <strong>職業: </strong><span th:text="*{job}">阿戴爾</span>
+            </p>
+            <p>
+                <strong>等級: </strong><span th:text="*{level}">275</span>
+            </p>
+            <p>
+                <strong>樂豆帳號: </strong><span th:text="*{beanAccount}">Default</span>
+            </p>
+            <p>
+                <strong>樂豆密碼: </strong><span th:text="*{beanPassword}">Default</span>
+            </p>
+        </div>
+
+        <div class="alert alert-success" th:unless="*{status == '已死亡'}">
+            <strong>狀態正常</strong>
+        </div>
+
+        <div class="alert alert-danger" th:if="*{status == '已死亡'}">
+            <strong>此腳色已死</strong>
+        </div>
+
+        <a href="javascript:history.go(-1)" class="btn btn-default" >返回列表</a>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script th:src="@{/js/bootstrap.min.js}" src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
+    com.jas: debug
+  file:
+    name: logs/debug.log
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://104.199.216.245:3306/controlsystemtest?useUnicode=true&characterEncoding=utf-8
+    username: jas
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

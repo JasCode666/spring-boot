@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>錯誤</title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{/css/bootstrap.min.css}" href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" style="max-width: 600px; margin-top: 50px;">
+        <div class="jumbotron">
+            <h2>Error</h2>
+            <p>對不起, 伺服器異常, 請聯絡網站擁有者</p>
+        </div>
+
+        <div th:utext="'&lt;!--'" th:remove="tag"></div>
+        <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"></div>
+        <div th:utext="'Exception message : ' + ${exception.message}" th:remove="tag"></div>
+        <ul th:remove="tag">
+            <li th:each=" st : ${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+        </ul>
+        <div th:utext="'--gt;'" th:remove="tag"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script th:src="@{/js/bootstrap.min.js}" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
